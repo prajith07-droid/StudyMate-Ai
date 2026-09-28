@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Progress - StudyMate AI</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-image: url("123.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #07bdf0;
+        }
+
+
+        .container {
+            width: 800px;
+            max-width: 90%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+
+        .overall {
+            background-color: #f5fcfe;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .overall h2 {
+            color: #07a9d6;
+            margin-top: 0;
+        }
+
+        .overall-number {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+        .subject {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 18px;
+            background-color: #fafafa;
+        }
+
+        .subject h2 {
+            color: #07a9d6;
+            margin-top: 0;
+        }
+
+        .subject p {
+            color: #555;
+        }
+
+
+        .bar {
+            width: 100%;
+            height: 25px;
+            background-color: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .fill {
+            height: 100%;
+            background-color: #07bdf0;
+            border-radius: 20px;
+        }
+
+
+
+        .tamil {
+            width: 80%;
+        }
+
+        .english {
+            width: 70%;
+        }
+
+        .mathematics {
+            width: 65%;
+        }
+
+        .physics {
+            width: 55%;
+        }
+
+        .chemistry {
+            width: 60%;
+        }
+
+        .computer {
+            width: 75%;
+        }
+
+        .programming {
+            width: 70%;
+        }
+
+        .data {
+            width: 50%;
+        }
+
+        .database {
+            width: 45%;
+        }
+
+        .electronics {
+            width: 55%;
+        }
+
+        .environment {
+            width: 85%;
+        }
+
+        .aptitude {
+            width: 65%;
+        }
+
+
+        /* Percentage */
+
+        .percentage {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+
+        /* Revision Section */
+
+        .revision {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f5fcfe;
+            border-radius: 12px;
+        }
+
+        .revision h2 {
+            color: #07a9d6;
+        }
+
+        .revision ul {
+            line-height: 1.8;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="exam.html">Upcoming Exams</a>
+
+        <a href="portions.html">Portions</a>
+
+        <a href="schedule.html">Study Schedule</a>
+
+        <a href="progress.html">Progress</a>
+
+        <a href="break.html">Brain Break</a>
+
+    </nav>
+
+
+    <div class="container">
+
+
+        <h1>📊 My Progress</h1>
+
+        <p class="description">
+            Track your learning progress in every subject
+        </p>
+
+
+        <div class="overall">
+
+            <h2>Overall Progress</h2>
+
+            <div class="overall-number">
+                65%
+            </div>
+
+            <p>
+                Keep studying and complete your syllabus!
+            </p>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>தமிழ் (Tamil)</h2>
+
+            <p>
+                Language, literature and grammar
+            </p>
+
+            <div class="bar">
+                <div class="fill tamil"></div>
+            </div>
+
+            <div class="percentage">
+                80%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>English</h2>
+
+            <p>
+                Prose, poetry, grammar and writing
+            </p>
+
+            <div class="bar">
+                <div class="fill english"></div>
+            </div>
+
+            <div class="percentage">
+                70%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Mathematics</h2>
+
+            <p>
+                Matrices, calculus, probability and statistics
+            </p>
+
+            <div class="bar">
+                <div class="fill mathematics"></div>
+            </div>
+
+            <div class="percentage">
+                65%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Physics</h2>
+
+            <p>
+                Mechanics, electricity, magnetism and modern physics
+            </p>
+
+            <div class="bar">
+                <div class="fill physics"></div>
+            </div>
+
+            <div class="percentage">
+                55%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Chemistry</h2>
+
+            <p>
+                Atomic structure, bonding, thermodynamics and organic chemistry
+            </p>
+
+            <div class="bar">
+                <div class="fill chemistry"></div>
+            </div>
+
+            <div class="percentage">
+                60%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Computer Science</h2>
+
+            <p>
+                Computing concepts, algorithms and programming
+            </p>
+
+            <div class="bar">
+                <div class="fill computer"></div>
+            </div>
+
+            <div class="percentage">
+                75%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Programming</h2>
+
+            <p>
+                C, C++, Python, Java and Web Development
+            </p>
+
+            <div class="bar">
+                <div class="fill programming"></div>
+            </div>
+
+            <div class="percentage">
+                70%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Data Structures</h2>
+
+            <p>
+                Arrays, linked lists, stacks, queues, trees and graphs
+            </p>
+
+            <div class="bar">
+                <div class="fill data"></div>
+            </div>
+
+            <div class="percentage">
+                50%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Database Management</h2>
+
+            <p>
+                Database fundamentals, ER diagrams, SQL and normalization
+            </p>
+
+            <div class="bar">
+                <div class="fill database"></div>
+            </div>
+
+            <div class="percentage">
+                45%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Electronics</h2>
+
+            <p>
+                Basic electronics, diodes, transistors and digital electronics
+            </p>
+
+            <div class="bar">
+                <div class="fill electronics"></div>
+            </div>
+
+            <div class="percentage">
+                55%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Environmental Science</h2>
+
+            <p>
+                Ecosystem, natural resources, pollution and sustainability
+            </p>
+
+            <div class="bar">
+                <div class="fill environment"></div>
+            </div>
+
+            <div class="percentage">
+                85%
+            </div>
+
+        </div>
+
+
+        <div class="subject">
+
+            <h2>Aptitude</h2>
+
+            <p>
+                Numbers, percentages, ratios, time and logical reasoning
+            </p>
+
+            <div class="bar">
+                <div class="fill aptitude"></div>
+            </div>
+
+            <div class="percentage">
+                65%
+            </div>
+
+        </div>
+
+
+        <div class="revision">
+
+            <h2>📌 Focus on Revision</h2>
+
+            <ul>
+
+                <li>Complete remaining Database Management portions</li>
+
+                <li>Practice Data Structures problems</li>
+
+                <li>Revise Physics concepts</li>
+
+                <li>Practice Electronics topics</li>
+
+                <li>Continue Mathematics problem solving</li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
